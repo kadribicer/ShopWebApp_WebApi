@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Shop.Bll.Concrete.Manager.CategoryManager" BaseTypeListCollapsed="true">
+    <Position X="1" Y="3.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Concrete\Manager\CategoryManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Shop.Bll.Concrete.Manager.InvoiceManager" BaseTypeListCollapsed="true">
+    <Position X="8.25" Y="3.25" Width="5.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAgCAAAAAAgQAAAAAAMACAABAI=</HashCode>
+      <FileName>Concrete\Manager\InvoiceManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Shop.Bll.Concrete.Manager.ProductManager" BaseTypeListCollapsed="true">
+    <Position X="4.75" Y="3.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Concrete\Manager\ProductManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Shop.Bll.Concrete.Manager.UserManager" BaseTypeListCollapsed="true">
+    <Position X="14" Y="3.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAEAAAAAEAAAA=</HashCode>
+      <FileName>Concrete\Manager\UserManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="Shop.Bll.Abstract.IManager.ICategoryManager">
+    <Position X="1.25" Y="1.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Abstract\IManager\ICategoryManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Shop.Bll.Abstract.IManager.IInvoiceManager">
+    <Position X="8.25" Y="0.75" Width="5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAAAAQAAAAAAMACAAAAI=</HashCode>
+      <FileName>Abstract\IManager\IInvoiceManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Shop.Bll.Abstract.IManager.IProductManager">
+    <Position X="4.75" Y="1.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Abstract\IManager\IProductManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Shop.Bll.Abstract.IManager.IUserManager">
+    <Position X="14" Y="1.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAEAAAA=</HashCode>
+      <FileName>Abstract\IManager\IUserManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

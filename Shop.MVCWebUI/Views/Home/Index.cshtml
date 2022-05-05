@@ -1,0 +1,55 @@
+﻿@model Shop.MVCWebUI.ViewModel.HomeVM
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<form asp-controller="Home" asp-action="Index" asp-route-username="@Model.User.UserName" method="post">
+
+    @await Html.PartialAsync("_IndexHeader", Model.User)
+
+    <section class="py-1">
+        <div class="container px-4 px-lg-5 mt-5">
+
+            <partial name="_StatusNotification" />
+
+            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-lg-3 row-cols-xl-4 justify-content-center">
+                @{
+                    if (Model.Categories.Count > 0)
+                    {
+                        int productIndex = 0;
+                        foreach (var category in Model.Categories)
+                        {
+                            if (category.Products.Count > 0)
+                            {
+                                foreach (var product in category.Products)
+                                {
+                                    <div class="col-lg mb-5">
+                                        <div class="card h-100">
+                                            <img class="card-img-top" src="/img/@(product.CategoryId == 1 ? "groceries.jpg" : "other.jpg")" alt=""/>
+                                            <div class="card-body p-2">
+                                                <div class="text-center">
+                                                    <span class="text-muted">@category.Name</span>
+                                                    <h5 class="fw-bolder">@product.Name</h5>
+                                                    <strong class="font-22">$@product.UnitPrice</strong>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer p-3 pt-0 border-top-0 bg-transparent mt-2">
+                                                <label>Quantity</label>
+                                                <input asp-for="@Model.ProductVMs[productIndex].ProductId" type="hidden" value="@product.Name">
+                                                <input asp-for="@Model.ProductVMs[productIndex].ProductName" type="hidden" value="@product.Name">
+                                                <input asp-for="@Model.ProductVMs[productIndex].ProductUnitPrice" type="hidden" value="@product.UnitPrice">
+                                                <input asp-for="@Model.ProductVMs[productIndex].ProductCategory" type="hidden" value="@product.CategoryId">
+                                                <input asp-for="@Model.ProductVMs[productIndex].ProductQuantity" value="0" min="0" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    productIndex++;
+                                }
+                            }
+                        }
+                    }
+                }
+            </div>
+        </div>
+    </section>
+</form>

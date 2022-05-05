@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Shop.Dal.Concrete.EntityFramework.ContextBase.DataContext">
+    <Position X="15.25" Y="0.5" Width="4.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAQAAAABAAAAAAAAAAAAAGAAAAAAAAAAAAQQ=</HashCode>
+      <FileName>Concrete\EntityFramework\ContextBase\DataContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Shop.Dal.Concrete.EntityFramework.Repository.EFCategoryRepository">
+    <Position X="8.25" Y="8.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Concrete\EntityFramework\Repository\EFCategoryRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Shop.Dal.Concrete.EntityFramework.Repository.EFEntityRepository&lt;T&gt;">
+    <Position X="2.75" Y="4.75" Width="10.25" />
+    <TypeIdentifier>
+      <HashCode>AAMAAAAAAAAABAAAAAAAIAAAAAAACAAAAgAAIAAAAAA=</HashCode>
+      <FileName>Concrete\EntityFramework\Repository\EFEntityRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Shop.Dal.Concrete.EntityFramework.Repository.EFInvoiceRepository">
+    <Position X="0.75" Y="8.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Concrete\EntityFramework\Repository\EFInvoiceRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Shop.Dal.Concrete.EntityFramework.Repository.EFProductRepository">
+    <Position X="4.5" Y="8.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Concrete\EntityFramework\Repository\EFProductRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Shop.Dal.Concrete.EntityFramework.Repository.EFUserRepository">
+    <Position X="12" Y="8.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Concrete\EntityFramework\Repository\EFUserRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Shop.Dal.Concrete.EntityFramework.UnitOfWork.EFUnitOfWork" BaseTypeListCollapsed="true">
+    <Position X="15.75" Y="6.75" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>gAAAAIAAACCEBAAAAAAAAAAAAAAAAAAAAAEAAAAAACA=</HashCode>
+      <FileName>Concrete\EntityFramework\UnitOfWork\EFUnitOfWork.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="Shop.Dal.Abstract.IRepository.ICategoryRepository">
+    <Position X="2" Y="3" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Abstract\IRepository\ICategoryRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Shop.Dal.Abstract.IRepository.IEntityRepository&lt;T&gt;">
+    <Position X="1.5" Y="0.5" Width="10.25" />
+    <TypeIdentifier>
+      <HashCode>AAMAAAAAAAAAAAAAAAAAAAAAAAAACAAAAgAAIAAAAAA=</HashCode>
+      <FileName>Abstract\IRepository\IEntityRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Shop.Dal.Abstract.IRepository.IInvoiceRepository">
+    <Position X="7.25" Y="3" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Abstract\IRepository\IInvoiceRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Shop.Dal.Abstract.IRepository.IProductRepository">
+    <Position X="9.75" Y="3" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Abstract\IRepository\IProductRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Shop.Dal.Abstract.IRepository.IUserRepository">
+    <Position X="4.75" Y="3" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Abstract\IRepository\IUserRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Shop.Dal.Abstract.UnitOfWork.IUnitOfWork">
+    <Position X="15.75" Y="3.75" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>gAAAAIAAAACAAAAAAAAAAAAAAAAAAAAAAAEAAAAAACA=</HashCode>
+      <FileName>Abstract\UnitOfWork\IUnitOfWork.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

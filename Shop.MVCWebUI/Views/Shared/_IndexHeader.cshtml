@@ -1,0 +1,32 @@
+﻿@model Shop.Entities.Concrete.User
+
+<header class="bg-dark py-1">
+    <div class="container px-4 px-lg-5 my-5">
+        <div class="text-left text-white">
+
+            @if (ViewBag.Data == "Shop Discount")
+            {
+                <div class="col-lg float-end text-center mt-4">
+                    <button class="btn btn-light mt-auto font-20" type="submit">Create Invoice</button>
+                </div>
+            }
+            else if (ViewBag.Data == "Invoice")
+            {
+                <div class="col-lg float-end text-center mt-4">
+                    <a class="btn btn-light mt-auto font-20" href="/">New Order</a>
+                </div>
+            }
+
+            <h1 class="display-4 fw-bolder mb-3">@ViewBag.Data</h1>
+            @{
+                if (Model != null)
+                {
+                    <p class="mb-0 text-warning"><strong>Username:</strong> <span class="text-white">@Model.UserName</span></p>
+                    <p class="mb-0 text-warning"><strong>Join Date:</strong> <span class="text-white">@Model.JoinDate.ToLongDateString()</span></p>
+                    <p class="mb-0 text-warning"><strong>User Type:</strong> <span class="text-white">@Model.UserType.Role</span></p>
+                    <p class="mb-0 text-warning"><strong>User Details:</strong> <span class="text-white">@Model.UserDetails</span></p>
+                }
+            }
+        </div>
+    </div>
+</header>

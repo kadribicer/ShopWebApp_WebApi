@@ -1,0 +1,15 @@
+﻿@{
+    switch (ViewBag.Status)
+    {
+        case "Required":
+            <div class="alert alert-danger">
+                <strong>Warning!</strong> No products selected, please add a few items from the list below!
+            </div>
+            break;
+        case "Exception":
+            <div class="alert alert-danger">
+                <strong>Warning!</strong> An error occurred during operation. Please try again later.
+            </div>
+            break;
+    }
+}

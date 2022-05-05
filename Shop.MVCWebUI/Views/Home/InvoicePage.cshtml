@@ -1,0 +1,81 @@
+﻿@model Shop.MVCWebUI.ViewModel.InvoiceVM
+
+@{
+    ViewData["Title"] = "InvoicePage";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@await Html.PartialAsync("_IndexHeader", Model.User)
+
+<div class="container p-4">
+    <div class="col-md-12">
+        <div class="invoice">
+            <div class="invoice-content">
+                <div class="table-responsive">
+                    <table class="table table-invoice">
+                        <caption class="hide"></caption>
+                        <thead>
+                            <tr>
+                                <th>PRODUCT</th>
+                                <th class="text-center">DISCOUNT</th>
+                                <th class="text-center">UNIT PRICE</th>
+                                <th class="text-center">QUANTITY</th>
+                                <th class="text-center">TOTAL PRICE</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            @foreach (var product in Model.Invoice.InvoiceDetails)
+                            {
+                                <tr>
+                                    <td>
+                                        <span class="font-bold">@product.ProductName</span><br>
+                                        <small>@product.ProductCategory</small>
+                                    </td>
+                                    <td class="text-center">
+                                        @if (product.ProductCategory != "Groceries")
+                                        {
+                                            <img class='discount-check' src='/img/check.png' alt="" />
+                                        }
+                                    <td class="text-center">$@product.ProductUnitPrice</td>
+                                    <td class="text-center">@product.ProductTotalQuantity</td>
+                                    <td class="text-center">$@product.ProductTotalPrice</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="invoice-price">
+                    <div class="invoice-price-left">
+                        <div class="invoice-price-row">
+                            <div class="sub-price">
+                                <small>TOTAL PRICE</small>
+                                <span class="text-inverse">$@Model.Invoice.SubTotalPrice</span>
+                            </div>
+                            <div class="sub-price">
+                                <small>DISCOUNT</small>
+                                <span class="text-inverse">$@Model.Invoice.DiscountPrice</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="invoice-price-right">
+                        <small>DISCOUNTED PRICE</small> <span class="f-w-600">$@Model.Invoice.TotalPrice</span>
+                    </div>
+                </div>
+                <br />
+                <div class="invoice-price">
+                    <div class="invoice-price-left">
+                        <div class="invoice-price-row">
+                            <div class="sub-price">
+                                <small>DISCOUNT DESCRIPTION</small>
+                                <span class="font-14">If the user has earned a percentage discount (5%, 10%, 30%), a discount is provided on the total price of the products that do not fall into the grocery category. If there is any product from the groceries category after the discount, the total price of the products in the groceries category is added to this discounted price. After the discounts and after adding the total price of the products in the groceries category to the discounted price, a $5 discount is provided for every $100 and the total amount to be paid is calculated.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

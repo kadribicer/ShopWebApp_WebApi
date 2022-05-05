@@ -1,0 +1,39 @@
+﻿@model List<Shop.Entities.Concrete.User>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<partial name="_LoginHeader" />
+
+<section class="py-1">
+    <div class="container px-4 px-lg-5 mt-5">
+        <div class="row gx-4 gx-lg-5 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 justify-content-center">
+            @{
+                if (Model.Count > 0)
+                {
+                    foreach (var user in Model)
+                    {
+                        <div class="col-md mb-5">
+                            <div class="card h-100">
+                                <img class="card-img-top" src="/img/user.jpg" alt="" />
+                                <div class="card-body p-2">
+                                    <div class="text-center">
+                                        <p class="mb-0">Username: <span class="fw-bolder">@user.UserName</span></p>
+                                        <p class="mb-0">User Type: <span class="fw-bolder">@user.UserType.Role</span></p>
+                                        <p class="mb-0">Join Date: <span class="fw-bolder">@user.JoinDate.ToShortDateString()</span></p>
+                                        <br>
+                                        <p class="mb-0">@user.UserDetails</p>
+                                    </div>
+                                </div>
+                                <form asp-controller="Home" asp-action="Index" asp-route-username="@user.UserName" method="get" class="card-footer p-3 pt-0 border-top-0 bg-transparent text-center">
+                                    <button class="btn btn-outline-danger btn-sm mt-auto" type="submit">Continue with this user.</button>
+                                </form>
+                            </div>
+                        </div>
+                    }
+                }
+            }
+        </div>
+    </div>
+</section>
