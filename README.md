@@ -119,6 +119,6 @@ Example request
 
 
 * The given scenario is developed not only as a web application but also as a console application.
-- You can access the console application from the link here. [API Endpoint](https://github.com/kadribicer/ShopConsoleApp_WebApi).
+- You can access the console application from the link here. [Console Application](https://github.com/kadribicer/ShopConsoleApp_WebApi).
 
 
